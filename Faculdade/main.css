@@ -1,0 +1,46 @@
+body {
+    font-family: monospace;
+  }
+  
+  ul {
+    font-family: Helvetica;
+  }
+  
+  li {
+    list-style: circle;
+  }
+  
+  .List {
+    list-style: square;
+  }
+  
+  #msg {
+    font-family: monospace;
+  }
+  
+  .light-theme {
+    background: var(--green);
+    color: var(--black);
+  }
+  
+  .dark-theme {
+    background: var(--black);
+    color: var(--green);
+  }
+  
+  :root {
+    --green: green;
+    --white: white;
+    --black: black;
+  }
+
+  * {
+            color: var(--font-color);
+            font-family:Helvetica;
+        }
+   
+  body {
+            background: var(--bg);
+        }
+
+      

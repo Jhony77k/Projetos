@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Tabela Colspan</title>
+</head>
+
+
+<body>
+    <table style:#c71306f1; cellpadding="5x" cellspacing="2" align="center" width="35%" border="2" >
+        <tr height="20px">
+            <th bgcolor="#5DE2E7" width="50px" rowspan="4"> Balanço</th>
+            <th> Mês</th>
+            <th> Lucro</th>
+            <th> Despesas</th>
+            <th> Saldo</th>
+        </tr>
+        <tr height="20px">
+           <td colspan="5" align="center"> Ano de 2074 </td>
+        </tr>
+        <tr>
+            <td>Janeiro</td>
+            <td>R$10.000,00</td>
+            <td>R$5.000,00</td>
+            <td>R$5.000,00</td>
+        </tr>
+        <tr>
+            <td>Janeiro</td>
+            <td>R$8.000,00</td>
+            <td>R$4.000,00</td>
+            <td>R$4.000,00</td>
+        </tr>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+1 - Não pode ter espaço (deve ser escrito tudo junto)
+2 - Não começar com números
+3 - Não pode ter acentos
+4 - Não pode ter caractere especial
+5 - Não pode ter "Ç" (cedilha)
+
+TAGs >
+
+<meta charset= "UTF-8"/> - Tag de execução - È uma propriedade ou atributo.
+<body bgcolor=""> Background color - È uma propriedade ou atributo.
+<br/> - Backroll  Pula uma linha do paragrafo, pode ser antes ou depois.
+<p>  </p> - Parágrafos
+<b> </b> - Tag que deixa o texto em negrito
+<i> </i> - Tag que deixa o texto em itálico
+<s> </s> - Tag que deixa o texto arranhado
+<u> </u> - Tag que sublinha o texto (underline em inglês) 
+<hr> - Linha tracejada para divisão de texto
+<img src=> Tag de imagem local
+DECIMAL> RGB - Red . Green , Blue - Padrão de cores
+Código de cores - Hex - Hexadecimal - Código de cor #0c6dcf - Ferramenta - Seletor de cores do google.
+
+No Brasil utilizamos o UTF-8 em projetos mais novos - (caso de problemas de acentos, pois ele corrige o mapa de acentos e caracteres)
+
+
+
+
+

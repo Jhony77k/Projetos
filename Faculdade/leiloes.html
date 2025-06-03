@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Leilões</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: transparent;
+    }
+
+    header {
+      background-color: transparent;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: rgb(7, 0, 0);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-area img {
+      height: 40px;
+      width: auto;
+    }
+
+    .logo-text {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: rgb(3, 3, 3);
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #dbdbdb;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      nav {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav a {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    th {
+      font-family: Arial;
+      font-size: 14px;
+      color: #333;
+      background-color: #c7c7c7;
+      text-align: center;
+    }
+
+    .seletor {
+      position: relative;
+      z-index: 1;
+    }
+
+    .seletor::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('img/logo.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      opacity: 0.2;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    td a {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      transition: background-color 0.3s ease, border-radius 0.3s ease;
+      padding: 8px;
+      border-radius: 0px;
+    }
+
+    td a:hover {
+      background-color: #f0f0f0;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body class="seletor">
+
+  <header>
+    <div class="logo-area">
+      <img src="img/logo.png" alt="Logo" />
+      <div class="logo-text">LISTA DE LEILÕES 2025</div>
+    </div>
+
+    <nav>
+      <a href="">Início</a>
+      <a href="leiloes.html">Leilões</a>
+      <a href="contato.html">Contato</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <br><br>
+
+  <table width="100%" height="100%" align="center" cellpadding="10%" cellspacing="1px" border="">
+    <tr>
+      <th>Sites</th>
+      <th>Confiável?</th>
+      <th>Tipos de materiais à venda:</th>
+    </tr>
+    <tr>
+      <td align="justify">
+        <a href="https://www.leilaoonline.net/" target="_blank" rel="noopener noreferrer">Leilão Online</a>
+      </td>
+      <td align="center" bgcolor="#19f705" style="font-weight:bold;">SIM</td>
+      <td align="justify">Sucatas diversas, equipamentos industriais, veículos, caminhões e maquinários agrícolas</td>
+    </tr>
+    <tr>
+      <td align="justify">
+        <a href="https://www.fidalgoleiloes.com.br/" target="_blank" rel="noopener noreferrer">Fidalgo Leilões</a>
+      </td>
+      <td align="center" bgcolor="#19f705" style="font-weight:bold;">SIM</td>
+      <td align="justify">Imóveis e veículos</td>
+    </tr>
+    <tr>
+      <td align="justify">
+        <a href="https://www.biasileiloes.com.br/" target="_blank" rel="noopener noreferrer">Biasi Leilões</a>
+      </td>
+      <td align="center" bgcolor="#19f705" style="font-weight:bold;">SIM</td>
+      <td align="justify">Sucatas diversas da ArcellorMittal e imóveis</td>
+    </tr>
+    <tr>
+      <td align="justify">
+        <a href="https://www.superbid.net/" target="_blank" rel="noopener noreferrer">SuperBid</a>
+      </td>
+      <td align="center" bgcolor="#19f705" style="font-weight:bold;">SIM</td>
+      <td align="justify">Sucatas diversas, equipamentos industriais, veículos, caminhões e maquinários agrícolas</td>
+    </tr>
+    <tr>
+      <td align="justify">
+        <a href="https://www.milanleiloes.com.br/" target="_blank" rel="noopener noreferrer">Milan Leilões</a>
+      </td>
+      <td align="center" bgcolor="#19f705" style="font-weight:bold;">SIM</td>
+      <td align="justify">Sucatas diversas, equipamentos industriais, veículos, caminhões, Lotes da Ford, GM etc.</td>
+    </tr>
+  </table>
+
+  <br><br><br>
+
+  <table align="right" cellpadding="1px" cellspacing="100%" border="3">
+    <tr>
+      <td><a href="index.html">Voltar</a></td>
+    </tr>
+  </table>
+
+</body>
+</html>

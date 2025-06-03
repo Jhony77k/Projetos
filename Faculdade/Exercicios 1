@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title> Tabela </title>
+        <style>
+			/*CSS */
+			th{
+				color:#070707f1;
+				font-size:14pt;
+				background-color:#ce170af1;
+				font-family: "verdana";
+                text-align:center;
+			}
+			
+
+			td{
+				color:#0c0c0cbd;
+				font-size:14pt;
+				font-weight:bold;
+				background-color:#fffffff1;
+				font-family: "verdana";
+			}
+            	
+		</style>
+    </head>
+
+    <body>
+        <table style:#c71306f1; cellpadding="50x" cellspacing="2" align="center" width="65%" border="2" >
+			<tr height="20px">
+				<th> Heroi</th>
+				<th> Revista</th>
+                <th> Imagem</th>
+			</tr>
+			<tr height="20px">
+				<td>Homem Aranha</td>
+				<td> <a href="https://www.marvel.com/comics"> Marvel Comics </a> </td>
+                <td>   
+                <img 
+	                src="img3\aranha.png" 
+	                height="150px"
+	                width="150px"/>
+                </td>
+			</tr>
+			<tr>
+				<td>Batman</td>
+                <td> <a href="https://www.dc.com/"> DC Comics</a></td>
+                <td>   
+                <img
+                    src="img3\batman.png"
+                    height="150px"
+                    width="150px"/>
+                </td>
+			</tr>
+
+    </body>
+
+</html>

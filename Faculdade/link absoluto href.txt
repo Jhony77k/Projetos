@@ -1,0 +1,30 @@
+<html>
+	<head>
+	  <meta charset= "UTF-8"/>
+	</head>
+		<title> Trabalhando com imagens! </title> 
+	<body>
+	  <img 
+	  src="https://fastly.4sqi.net/img/general/width960/18617621_gBWQkWeZbOjNzmrqExiH0OTKXBIcWTSAbFw1XPSVZFQ.jpg"
+	  alt="Comentario de Acessibilidade"
+	  height="100%"
+	  width="100%"
+	  />
+	  <!-- Tag de execução é direto --> <!-- Tag de demarcação : <img> </img> -->
+	  <img 
+	  src="img\UNICID2.png" 
+	  alt="Comentario de Acessibilidade"
+	  height="100%"
+	  width="100%"
+	  />
+	  
+	  
+	 <img 
+	 src="" 
+	 alt=""
+	 height=""
+	 width=""
+	 />
+	</body>
+
+</html>

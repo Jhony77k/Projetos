@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<meta charset= "UTF-8"/>
+	</head>
+		<title>Trabalhando com Tabelas</title>
+	<body>
+		<h1> <center>Trabalhando com Tabelas!</center> </h1>
+		<table bgcolor="#a1a1a1" border="1" cellspacing="0" cellpadding="20px" width="90%">
+			<tr height="70px">
+				<th width="30%">Nome</th>
+				<th width="10%">Idade</th>
+				<th width="30%">Linguagem</th>
+				<th width="30%">Definição</th>	
+			</tr>
+			<tr>
+				<td style="font-size:18pt;">Rodrigo</td>
+				<td style="font-size:18pt;" align="center">22</td>
+				<td style="font-size:18pt;" > <a href="https://docs.python.org/3/tutorial/index.html"/> Tutorial Python! </td>
+				<td align="center">
+				<img 
+				src="img2\park.png" 
+	            height="100%"
+	            width="100%"
+				/> 
+				</td>
+			</tr>
+			<tr>
+				<td style="font-size:18pt;">Rikelme</td>
+				<td style="font-size:18pt;" align="center" style="color:#005c2f;">19</td>
+				<td style="font-size:18pt;" >Python</td>
+				<td> 
+				<img  
+				src="img2\libertadores.png"
+				height="100%"
+				width="100%"
+				/>
+				</td>	
+			</tr>	
+			<tr>
+				<td style="font-size:18pt;">Rodrigo</td>
+				<td style="font-size:18pt;" align="center">20</td>
+				<td style="font-size:18pt;" >Python</td>
+				<td>  
+				<img
+				 src="img2\valorant.png"
+				 height="100%"
+				 width="100%"
+				/>
+				</td>	
+			</tr>
+			<tr>
+				<td style="font-size:18pt;">Rodrigo</td>
+				<td style="font-size:18pt;" align="center">23</td>
+				<td style="font-size:18pt;" >CSS</td>
+				<td>
+				<img
+				src="img2\arcond.png"
+				height="100%"
+				width="100%"
+				/>
+				
+				</td>	
+			</tr>
+			<tr>
+				<td style="font-size:18pt;">Rodrigo</td>
+				<td style="font-size:18pt;" align="center">28</td>
+				<td style="font-size:18pt;" >HTML</td>
+				<td>
+				<img
+				src="img2\mec.png"
+				height="100%"
+				width="100%"
+				/>
+				</td>	
+			</tr>
+		</table>
+		
+	</body>
+
+</html>
+
+<!--
+
+Align ou text-align(css) alinham horizontalmente o texto, as
+opções podem ser:
+
+	left
+	right
+	center
+	justify
+	valign ou vertical-align(css)> Alinhamento
+	Poder ser:
+	top
+	middle
+	bottom
+>
