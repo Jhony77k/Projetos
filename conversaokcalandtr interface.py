@@ -4,7 +4,8 @@ from tkinter import ttk
 class ConversorApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Conversor com Histórico")
+        self.root.title("Conversor de kcal/h para TR")
+        self.root.geometry("1366x768")
         self.historico = []
 
         # Entrada de valor
@@ -16,6 +17,7 @@ class ConversorApp:
         # Botão de conversão
         self.btn_converter = ttk.Button(root, text="Converter", command=self.converter)
         self.btn_converter.grid(row=0, column=2, padx=5, pady=5)
+        
 
         # Lista de histórico
         self.label_hist = ttk.Label(root, text="Histórico de Conversões:")
