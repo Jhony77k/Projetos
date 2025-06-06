@@ -11,8 +11,8 @@ def kcalh_para_tr(kcal_h):
     return tr
 
 # Exemplo de uso
-resultado = kcalh_para_tr(kcal_h)  # Realiza a conversão
 kcal_h = float(input("Digite o valor em kcal/h: "))  # Usuário entra com a quantidade de kcal/h
+resultado = kcalh_para_tr(kcal_h)  # Realiza a conversão
 print(f"{kcal_h} kcal/h equivalem a {resultado:.6f} TR")  # Mostra o resultado em TR
 
 
