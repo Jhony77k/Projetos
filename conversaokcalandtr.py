@@ -4,6 +4,7 @@ def kcalh_para_tr(kcal_h):
     watt_por_kcalh = 1 / 0.859845227859  # Conversão de kcal/h para Watt
     
     # 1 Watt -> 0.000284345136094 TR
+    
     tr_por_watt = 0.000284345136094  # Conversão de Watt para TR
     
     # Conversão: kcal/h → Watt → TR
