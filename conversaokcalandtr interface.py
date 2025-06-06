@@ -1,19 +1,46 @@
-def kcalh_para_tr(kcal_h):
-    # Etapas da conversã:
-    # 1 kcal/h -> 1 / 0.859845227859 Watt
-    watt_por_kcalh = 1 / 0.859845227859  # Conversão de kcal/h para Watt
-    
-    # 1 Watt -> 0.000284345136094 TR
-    
-    tr_por_watt = 0.000284345136094  # Conversão de Watt para TR
-    
-    # Conversão: kcal/h → Watt → TR
-    tr = kcal_h * watt_por_kcalh * tr_por_watt
-    return tr
+import tkinter as tk
+from tkinter import ttk
 
-# Exemplo de uso
-kcal_h = float(input("Digite o valor em kcal/h: "))  # Usuário entra com a quantidade de kcal/h
-resultado = kcalh_para_tr(kcal_h)  # Realiza a conversão
-print(f"{kcal_h} kcal/h equivalem a {resultado:.6f} TR")  # Mostra o resultado em TR
+class ConversorApp:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Conversor com Histórico")
+        self.historico = []
 
+        # Entrada de valor
+        self.label_valor = ttk.Label(root, text="Valor em kcal/h:")
+        self.label_valor.grid(row=0, column=0, padx=5, pady=5)
+        self.entry_valor = ttk.Entry(root)
+        self.entry_valor.grid(row=0, column=1, padx=5, pady=5)
 
+        # Botão de conversão
+        self.btn_converter = ttk.Button(root, text="Converter", command=self.converter)
+        self.btn_converter.grid(row=0, column=2, padx=5, pady=5)
+
+        # Lista de histórico
+        self.label_hist = ttk.Label(root, text="Histórico de Conversões:")
+        self.label_hist.grid(row=1, column=0, columnspan=3, padx=5, pady=5)
+        self.listbox_hist = tk.Listbox(root, width=50)
+        self.listbox_hist.grid(row=2, column=0, columnspan=3, padx=5, pady=5)
+
+    def converter(self):
+        valor = self.entry_valor.get()
+        try:
+            valor_float = float(valor)
+            
+            # Fator de conversão para kcal/h -> TR (Toneladas de Refrigeração)
+            fator = 0.000330693393277316  # Fator de conversão
+
+            resultado = valor_float * fator  # Conversão de kcal/h para TR
+            texto = f"{valor_float} kcal/h equivale a {resultado:.6f} TR"
+            
+            # Adiciona ao histórico e na lista
+            self.historico.append(texto)
+            self.listbox_hist.insert(tk.END, texto)
+        except ValueError:
+            self.listbox_hist.insert(tk.END, "Valor inválido!")
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = ConversorApp(root)
+    root.mainloop()
