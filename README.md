@@ -24,7 +24,3 @@ Analista e Desenvolvedor de Sistemas - Full Stack.
 
 
 ---
-
-## ⭐ GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Jhony77k&show_icons=true)
