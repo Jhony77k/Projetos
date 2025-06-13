@@ -8,18 +8,14 @@ class ConversorApp:
         self.root.geometry("1366x768")
         self.historico = []
 
-        # Entrada de valor
         self.label_valor = ttk.Label(root, text="Valor em kcal/h:")
         self.label_valor.grid(row=0, column=0, padx=5, pady=5)
         self.entry_valor = ttk.Entry(root)
         self.entry_valor.grid(row=0, column=1, padx=5, pady=5)
 
-        # Botão de conversão
         self.btn_converter = ttk.Button(root, text="Converter", command=self.converter)
         self.btn_converter.grid(row=0, column=2, padx=5, pady=5)
-        
 
-        # Lista de histórico
         self.label_hist = ttk.Label(root, text="Histórico de Conversões:")
         self.label_hist.grid(row=1, column=0, columnspan=3, padx=5, pady=5)
         self.listbox_hist = tk.Listbox(root, width=50)
@@ -29,14 +25,11 @@ class ConversorApp:
         valor = self.entry_valor.get()
         try:
             valor_float = float(valor)
-            
-            # Fator de conversão para kcal/h -> TR (Toneladas de Refrigeração)
-            fator = 0.000330693393277316  # Fator de conversão
+            fator = 0.000330693393277316 
 
-            resultado = valor_float * fator  # Conversão de kcal/h para TR
+            resultado = valor_float * fator
             texto = f"{valor_float} kcal/h equivale a {resultado:.6f} TR"
             
-            # Adiciona ao histórico e na lista
             self.historico.append(texto)
             self.listbox_hist.insert(tk.END, texto)
         except ValueError:
